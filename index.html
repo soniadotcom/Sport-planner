@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="container">
+
+		<div id="left">
+			<h1>Excercises</h1>
+			<div id="items" class="list-group">
+			</div>
+		</div>
+
+		<div id="right">
+			<div id="menu">
+				<a id="a-download" class="test" href="#" style="display:none;"><h3>Download</h3></a>
+				<a id="a-make" href="#"><h3>Save</h3></a><br>
+			</div>
+				
+			<div id="screenshot">
+
+				<input class="input" type="text" value="Plan">
+
+				<div id="days">
+					<div class="days">
+						<div class="checkbox">
+							<div class="center-checkbox">
+								<h2>1</h2>
+								<input type="checkbox">
+							</div>
+						</div>
+						<div id="day1" class="list-group day"></div>
+					</div>
+					<div class="days">
+						<div class="checkbox">
+							<div class="center-checkbox">
+								<h2>2</h2>
+								<input type="checkbox">
+							</div>
+						</div>
+						<div id="day2" class="list-group day"></div>
+					</div>
+					<div class="days">
+						<div class="checkbox">
+							<div class="center-checkbox">
+								<h2>3</h2>
+								<input type="checkbox">
+							</div>
+						</div>
+						<div id="day3" class="list-group day"></div>
+					</div>
+					<div class="days">
+						<div class="checkbox">
+							<div class="center-checkbox">
+								<h2>4</h2>
+								<input type="checkbox">
+							</div>
+						</div>
+						<div id="day4" class="list-group day"></div>
+					</div>
+					<div class="days">
+						<div class="checkbox">
+							<div class="center-checkbox">
+								<h2>5</h2>
+								<input type="checkbox">
+							</div>
+						</div>
+						<div id="day5" class="list-group day"></div>
+					</div>
+					<div class="days">
+						<div class="checkbox">
+							<div class="center-checkbox">
+								<h2>6</h2>
+								<input type="checkbox">
+							</div>
+						</div>
+						<div id="day6" class="list-group day"></div>
+					</div>
+					<div class="days">
+						<div class="checkbox">
+							<div class="center-checkbox">
+								<h2>7</h2>
+								<input type="checkbox">
+							</div>
+						</div>
+						<div id="day7" class="list-group day"></div>
+					</div>
+				</div>
+			</div>
+
+			<div id="remove" class="list-group col">
+			</div>
+		</div>
+	</div>
+
+	<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+	<script src="js/sort.js"></script>
+	<script src='js/script.js'></script>
+	<script src="js/screen.js"></script>
+	<script>
+		let img = document.createElement('img');
+
+		for(let i = 1; i < 85; i++){
+			img = new Image;
+			img.className = "list-group-item";
+			img.src = "img/" + i + ".jpg";
+			document.getElementById("items").append(img);
+		}
+	</script>
+
+</body>
+</html>
+
+
